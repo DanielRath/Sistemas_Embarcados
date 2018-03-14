@@ -1,1 +1,5 @@
+#!/bin/bash
 
+git add 01_Intro_Sist_Emb.md
+git commit -m $1
+git push origin master
