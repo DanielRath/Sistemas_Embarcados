@@ -25,7 +25,7 @@ Obs.: crtl + r: realiza uma busca no meu histórico de execuções.
   (c) Apresentar o caminho completo da pasta: ./
 
   (d) Trocar de pasta: cd (change directory). 
-Obs: "cd..": utilizado para voltar ao diretório acima do atual.
+Obs: "cd ..": utilizado para voltar ao diretório acima do atual - deve haver espaço entre cd e ..
 
   (e) Criar uma pasta: mkdir
 
