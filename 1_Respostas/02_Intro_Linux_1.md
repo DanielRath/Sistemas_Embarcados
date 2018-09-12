@@ -1,5 +1,5 @@
 1. Por que o Linux recebeu esse nome?
-  O kernel (núcleo do sistema operação) Linux recebeu esse nome, que é a união das palavras Linus - nome do programador que o desenvolveu - e Unix sistema operacional no qual foi baseado.
+  > O kernel (núcleo do sistema operação) Linux recebeu esse nome, que é a união das palavras Linus - nome do programador que o desenvolveu - e Unix sistema operacional no qual foi baseado.
 
 2. O que são daemons?
 Daemons são programas que rodam em backgroud e realizam uma tarefa relacionada ao sistema ou desempenha uma função específica. Um exemplo deles é o sshd, que gerencia o serviço de acesso remoto SSH.
