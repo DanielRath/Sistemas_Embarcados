@@ -2,7 +2,7 @@
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
 > fopen:abrir
-fclose: fechar
+>fclose: fechar
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
 
