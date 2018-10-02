@@ -5,13 +5,20 @@
 
 > FILE *fopen(const char *filename, const char *mode)
  
- fclose: fechar
- - int fclose(FILE *stream)
+ > close: fechar
+ 
+ > int fclose(FILE *stream)
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
->fscanf
+> fscanf
+
+> size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+> ptr: ponteiro do arquivo a ser lido; size: tamanho em bytes de cada elemento a ser lido; stream: "ponteiro para um objeto FILE que especifica um fluxo de saída"
 
 (c) Quais são as funções (e seus protótipos) para ler arquivos?
+>fread
+
+> size_t fread (void * ptr, size_t tamanho, size_t nmemb, FILE * stream)
 
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
 
@@ -30,3 +37,6 @@
 (d) Quais são as funções (e seus protótipos) para reposicionar um ponteiro para arquivo?
 
 (e) Quais bibliotecas devem ser incluídas no código para poder utilizar as funções acima?
+
+
+Referência Bibliográfica: https://www.tutorialspoint.com/c_standard_library/c_function_fwrite.htm
