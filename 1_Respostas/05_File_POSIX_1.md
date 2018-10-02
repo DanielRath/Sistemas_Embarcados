@@ -1,8 +1,9 @@
 1. Considerando a biblioteca-padrão da linguagem C, responda:
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
-> fopen:abrir (abre o arquivo direcionado pelo ponteiro, em um determinado modo)
-- FILE *fopen(const char *filename, const char *mode)
+> fopen:abrir (abre o arquivo direcionado pelo ponteiro, em um determinado modo)  F
+
+> FILE *fopen(const char *filename, const char *mode)
  
  fclose: fechar
  - int fclose(FILE *stream)
