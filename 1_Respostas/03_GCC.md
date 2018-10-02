@@ -4,11 +4,13 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 
 > Primeiramente, criou-se o arquivo olamundo.c :
 #include <stdio.h>
-int main (void)
+
+'''int main (void)
 {
 	printf("Ola mundo! \n");
 	return 0;
 }
+'''
 
 Para compilá-lo: 
 gcc -o ola olamundo.c
