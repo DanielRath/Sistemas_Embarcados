@@ -1,6 +1,8 @@
 1. Considerando a biblioteca-padrão da linguagem C, responda:
 
 (a) Quais são as funções (e seus protótipos) para abrir e fechar arquivos?
+> fopen:abrir
+fclose: fechar
 
 (b) Quais são as funções (e seus protótipos) para escrever em arquivos?
 
