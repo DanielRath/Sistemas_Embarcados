@@ -3,14 +3,16 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 1. Crie um "Olá mundo!" em C.
 
 > Primeiramente, criou-se o arquivo olamundo.c :
-#include <stdio.h>
 
-'''int main (void)
+```
+#include <stdio.h>
+int main (void)
 {
 	printf("Ola mundo! \n");
 	return 0;
 }
-'''
+
+```
 
 Para compilá-lo: 
 gcc -o ola olamundo.c
@@ -25,8 +27,8 @@ $ ./ola_usuario_1
 $ Digite o seu nome: Eu
 $ Ola Eu
 ```
-
->#include <stdio.h>
+```
+#include <stdio.h>
 int main (void)
 {
 	char nome[15];
@@ -35,7 +37,7 @@ int main (void)
 	printf("Ola %s",nome);
 	return 0;
 }
-
+```
 
 3. Apresente os comportamentos do código anterior nos seguintes casos:
 
@@ -170,7 +172,7 @@ $ Numero de entradas = 2
 $ ./ola_argumentos Eu Mesmo e Minha Pessoa
 $ Argumentos: Eu Mesmo e Minha Pessoa
 ```
->Code:
+```
 #include <stdio.h>
 #include <stdlib.h>
 int main (int argc, char *argv[])
@@ -183,6 +185,7 @@ int main (int argc, char *argv[])
         printf("Numero de entradas = %d \n", argc); //deve apresentar um $
         return 0;
 }
+```
 
 >Resposta:
 Ola Eu 
