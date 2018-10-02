@@ -3,8 +3,6 @@ Para todas as questões, compile-as com o gcc e execute-as via terminal.
 1. Crie um "Olá mundo!" em C.
 
 > Primeiramente, criou-se o arquivo olamundo.c :
-
-
 #include <stdio.h>
 int main (void)
 {
