@@ -194,6 +194,9 @@ Numero de entradas = 2
 
 8. Crie uma função que retorna a quantidade de caracteres em uma string, usando o seguinte protótipo:
 `int Num_Caracs(char *string);` Salve-a em um arquivo separado chamado 'num_caracs.c'. Salve o protótipo em um arquivo chamado 'num_caracs.h'. Compile 'num_caracs.c' para gerar o objeto 'num_caracs.o'.
+```
+Atenção: para se compilar um programa com mais de um arquivo fonte, deve-se utilizar o comando gcc -c para cada programa-objeto e, em seguida, se utilizar gcc -o para montar esses programas-objeto em forma de um arquivo executável - são parâmetros desse comando o nome de todas as funções.
+```
 
 9. Re-utilize o objeto criado na questão 8 para criar um código que imprime cada argumento de entrada e a quantidade de caracteres de cada um desses argumentos. Por exemplo, considerando que o código criado recebeu o nome de 'ola_num_caracs_1':
 
@@ -214,3 +217,5 @@ $ Total de caracteres de entrada: 25
 ```
 
 12. Crie um Makefile para a questão anterior.
+
+Referência Bibliográfica: https://fig.if.usp.br/~esdobay/c/gcc.html
