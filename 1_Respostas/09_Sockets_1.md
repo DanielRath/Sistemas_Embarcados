@@ -20,6 +20,14 @@ Convenções/ regras que controlam e possibilitam a conexão comunicação e a t
 3. Com relação ao protocolo TCP, responda:
 
 (a) O que são portas no protocolo TCP?
-> As portas TCP (Transmission Control Protocol) são ençdereos que  a aplicação à qual se destina 
+> As portas TCP (Transmission Control Protocol) são endereços que indicam a aplicação à qual se destinam os dados. 
 
 (b) Para que servem estas portas?
+> Para o recebimento de informações, de dados destinados a um aplicativo.
+P.S.:  um mesmo aplicativo pode utilzar várias portas
+
+````
+Referências Bibliográficas:
+https://br.ccm.net/contents/274-portas-tcp-ip
+https://www.infowester.com/portastcpudp.php
+https://pt.wikipedia.org/wiki/Transmission_Control_Protocol#Portas_ou_servi%C3%A7os
