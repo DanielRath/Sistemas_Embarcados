@@ -55,3 +55,7 @@ int main()
 Sabendo que a função `alarm()` tem como entrada a quantidade de segundos para terminar a contagem, quão precisos são os alarmes criados neste código? De onde vem a imprecisão? Este é um método confiável para desenvolver aplicações em tempo real?
 
 > Os alarmes deste código não são muito precisos. Devido às interrupções em sua execução por outros processos paralelos, a precisão da função `alarm()` é na ordem de microsegundos. Dessa maneira, para algumas aplicações em tempo real ela não é recomendada.
+
+```
+Referências Bibliográficas:
+http://www.csl.mtu.edu/cs4411.ck/www/NOTES/process/fork/create.html
