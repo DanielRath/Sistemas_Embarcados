@@ -61,6 +61,7 @@ int main (int argc, char** argv)
 (DICA: elas são relacionadas à função pthread_cancel().)
 
 ````
+Juntar threads = aguardar o término delas.
 MUITO IMPORTANTE! para compilar códigos com thread: gcc (nome do arquivo.c) -lpthread
 
 -lpthread: função para executar threads - não está presente na biblioteca padrão em c.
