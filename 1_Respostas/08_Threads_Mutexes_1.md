@@ -6,7 +6,7 @@
 > Desvantagens: A comunicação é mais complexa, visto que não há o compartilhamento do mesmo espaço de memória 
 
 (b) threads?
-> Vantagens: Por se usar memória compartilhada, a comunicação se dá de forma mais simples. Como as threads compartilham as variáveis globais do programa e descritores abertos, não há a necessidade de mecanismos de sincronização.
+> Vantagens: Por se usar memória compartilhada, a comunicação se dá de forma mais simples. Como as threads compartilham as variáveis globais do programa e descritores abertos, não há a necessidade de mecanismos de sincronização das tais.
 
 > Desvantagens: Há risco de serem corrompidos os dados, visto que a comunicação não se dá por mecanismos IPC.
 
