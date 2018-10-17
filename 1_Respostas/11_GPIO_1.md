@@ -11,6 +11,7 @@
 
 
 2. Apresente as formas de instalação de sistemas operacionais para o Raspberry Pi.
+> Cada sistema apresenta uma forma específica.
 
 3. Apresente 3 formas de desenvolvimento de software para o Raspberry Pi.
 
