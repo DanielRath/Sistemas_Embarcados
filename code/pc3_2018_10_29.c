@@ -7,6 +7,7 @@ int opcao;
 //to do list:
 //identify pid of process: "gvfsd-gphoto2" and kill;
 //create infinite loop for menu
+//images to smartphone (pc4)
 
 //comandos importantes:
 //ps -A
