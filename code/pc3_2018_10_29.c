@@ -8,6 +8,9 @@ int opcao;
 //identify pid of process: "gvfsd-gphoto2" and kill;
 //create infinite loop for menu
 
+//comandos importantes:
+//ps -A
+
 void iniciando()
 {
 	//teste
