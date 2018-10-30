@@ -5,7 +5,7 @@ int opcao;
 
 
 //to do list:
-//identify pid of process: "gvfsd-gphoto2" and kill;
+//identify pid of process: "gvfsd-gphoto2" and kill; (python to c converter?)
 //create infinite loop for menu
 //images to smartphone (pc4)
 
