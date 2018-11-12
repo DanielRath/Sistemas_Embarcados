@@ -1,7 +1,9 @@
 1. Cite as vantagens e desvantagens das comunicação serial:
  (a) Assíncrona (UART).
  > Vantagem: Por não ter ser síncrona, não apresenta o pino de clock; portanto, apresenta menos um pino.
- > Desvatagem> Quanto mais alta é a frequência de transmissão, menor o período e, consequentemente,  a chance de ter erro, visto que ele vai se propagando.
+ 
+ > Desvatagem: Quanto mais alta é a frequência de transmissão, menor o período e, consequentemente,  a chance de ter erro, visto que ele vai se propagando.
+ 
 (b) SPI.
  > manda o clock, leitura é na borda; não há preocupação com a temporização, apenas em obedecer o mestre.
  
