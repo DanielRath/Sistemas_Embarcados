@@ -20,4 +20,6 @@
  > Deve-se conectar o tx (transmissão), da rasp, aos 2 rx (recepção), dos dispositivos e ter o bit correspondente ao endereço em cada.
  
  5. Se o Raspberry Pi tiver de se comunicar com dois dispositivos via SPI, como executar a comunicação com o segundo dispositivo?
- > Chip-select ou daisy chain
+ > (Chip-select) Ligação paralela: é utilizado, para cada dispositivo "escravo", um pino SS, com o qual é realizada a comunicação.
+ 
+ > (Daisy chain) Ligação em cascata: utiliza-se apenas um pino SS; utilizam-se menos pinos, entretanto, reduz-se a velocidade.
