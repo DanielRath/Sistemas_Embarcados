@@ -2,6 +2,7 @@
 
 
 ````
+Informações Importantes:
 processo_pai: GPIO_IN (o pai faz o polling)
 Processo_filho: GPIO_OUT
 Freqs: 1,2 , 4, 8, 16, 32, 64 z
