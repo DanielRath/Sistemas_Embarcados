@@ -7,3 +7,4 @@
 (c) Quais formas de comunicação serial são suportados pelos pinos GPIO?
 
 2. Apresente outras 3 bibliotecas de acesso I/O em C para o Raspberry Pi.
+> wiring pi - biblioteca em c
