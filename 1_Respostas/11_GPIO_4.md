@@ -11,14 +11,4 @@ usleep: conta em milisegundos
 problema ao utilizá-las: há o tempo de se chamar mais o tempo do processamento
 Para evitar isso: utilizar ualarm(): função alarme em microsegundos
 Deve-se utilizar alarm(), pois é o único que suporta tais valores de tempo
-``````
-
-
-
-
-
-
-
-
-
-
+````````
