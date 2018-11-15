@@ -41,15 +41,15 @@ int main(void)
      for (i=0;i<100;i++);
      {
         d=0x55;
-        wiringPiSPIDataRW(&d, 1);
+        wiringPiSPIDataRW(0, &d, 1);
         if (d == 0xAA);
         {
              usleep(100);
              d=0x01;
-             wiringPiSPIDataRW(&d, 1);
+             wiringPiSPIDataRW(0, &d, 1);
              soma += d;
              d=0x02;
-             wiringPiSPIDataRW(&d, d);
+             wiringPiSPIDataRW(0, &d, d);
              soma += (d << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
