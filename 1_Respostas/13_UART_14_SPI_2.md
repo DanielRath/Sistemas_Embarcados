@@ -9,6 +9,8 @@
 Escreva o código para o Raspberry Pi executar este protocolo, de forma a obter conversões a cada 10 ms. A cada 1 segundo ele deve apresentar no terminal a média das últimas 100 amostras.
 
 ``````
+//Atenção: os códigos para msp estão no git do professor
+
 //configurar spi
 while(1)
 {
