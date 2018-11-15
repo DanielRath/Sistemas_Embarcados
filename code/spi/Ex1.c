@@ -19,7 +19,7 @@ void ctrl_c(int sig)
 int main(void)
 {
 	unsigned char user_input=1, send_msp430;
-	int i=0, int soma=0;
+	int i=0, soma=0;
 	char d[];
 	
 	signal(SIGINT, ctrl_c);
