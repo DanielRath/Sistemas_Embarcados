@@ -41,8 +41,8 @@ int main(void)
      for (i=0;i<100;i++);
      {
         send_msp430=0x55;
-        wiringPiSPIDataRW(0, &d, 1);
-        if (user_input == 0xAA);
+        wiringPiSPIDataRW(0, &send_msp430, 1);
+        if (send_msp430 == 0xAA);
         {
              usleep(100);
              send_msp430=0x01;
