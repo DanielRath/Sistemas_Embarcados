@@ -18,9 +18,8 @@ void ctrl_c(int sig)
 
 int main(void)
 {
-	unsigned char user_input=1, send_msp430;
+	unsigned char send_msp430;
 	int i=0, soma=0;
-	unsigned char d;
 	
 	signal(SIGINT, ctrl_c);
 	if(wiringPiSetup() == -1)
@@ -41,7 +40,7 @@ int main(void)
      for (i=0;i<100;i++);
      {
         send_msp430=0x55;
-        wiringPiSPIDataRW(0, &send_msp430, 1);
+        wiringPiSPIDataRW(0, &send_msp430, send_msp430);
 	     printf("valor1=%d\n", send_msp430);
         if (send_msp430 == 0xAA)
         {
