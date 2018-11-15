@@ -43,7 +43,7 @@ int main(void)
         send_msp430=0x55;
         wiringPiSPIDataRW(0, &send_msp430, 1);
 	     printf("valor1=%d\n", send_msp430);
-        if (send_msp430 == 0xAA);
+        if (send_msp430 == 0xAA)
         {
         
 		usleep(100);
