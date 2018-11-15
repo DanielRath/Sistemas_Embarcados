@@ -1,18 +1,22 @@
 /* 
+
 Codigo para o MSP430 funcionar como escravo SPI de
 acordo com o seguinte protocolo:
+
   	I. Receber o byte 0x55 e enviar o byte 0xAA,
   		o que indica o começo de uma conversão AD.
 	II. Receber os bytes 0x01 e 0x02, e enviar o
 		byte menos significativo e o mais
 		significativo da conversão de 10 bits do
 		sinal analogico no pino P1.0, nesta ordem.
+
 Conexoes:
    P1.0: sinal analogico entre 0 e Vcc
    P1.1: conexao SPI MISO
    P1.2: conexao SPI MOSI
    P1.4: conexao clock SPI
    P1.6: LED verde da placa Launchpad
+
 */
 
 #include <msp430g2553.h>
