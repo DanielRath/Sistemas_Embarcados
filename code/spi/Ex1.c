@@ -20,7 +20,7 @@ int main(void)
 {
 	unsigned char user_input=1, send_msp430;
 	int i=0, soma=0;
-	volatile unsigned char d;
+	unsigned char d;
 	
 	signal(SIGINT, ctrl_c);
 	if(wiringPiSetup() == -1)
