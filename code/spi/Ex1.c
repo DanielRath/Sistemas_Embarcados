@@ -40,18 +40,18 @@ int main(void)
      soma=0;
      for (i=0;i<100;i++);
      {
-        d=0x55;
+        send_msp430=0x55;
         wiringPiSPIDataRW(0, &d, 1);
-        if (d == 0xAA);
+        if (user_input == 0xAA);
         {
              usleep(100);
-             d=0x01;
-             wiringPiSPIDataRW(0, &d, 1);
-             soma += d;
-             d=0x02;
-             wiringPiSPIDataRW(0, &d, d);
+             send_msp430=0x01;
+             wiringPiSPIDataRW(0, &send_msp430, 1);
+             soma += send_msp430;
+             send_msp430=0x02;
+             wiringPiSPIDataRW(0, &send_msp430, send_msp430);
 		printf("valor=%d\n", soma);
-             soma += (d << 8); //"<<": realizar o deslocamento
+             soma += (send_msp430 << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
    soma=(soma+50/100); //somando metade do que estou dividindo: arredondar para cima. Ex.> se a variavel soma valesse 80, dividindo por 100, o valor da respoasta em inteiro seria 0
