@@ -40,12 +40,12 @@ int main(void)
      soma=0;
      for (i=0;i<100;i++);
      {
-        user_input=0x55;
+        send_msp430=0x55;
         wiringPiSPIDataRW(0, &send_msp430, 1);
 	     printf("valor1=%d\n", send_msp430);
-        if (user_input == 0xAA);
+        if (send_msp430 == 0xAA);
         {
-             send_msp430 = user_input;
+        
 		usleep(100);
              send_msp430=0x01;
              wiringPiSPIDataRW(1, &send_msp430, 1);
