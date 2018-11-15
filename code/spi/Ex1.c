@@ -19,18 +19,20 @@ void ctrl_c(int sig)
 int main(void)
 {
 	unsigned char user_input=1, send_msp430;
-	int mode, soma, i;
 
 	signal(SIGINT, ctrl_c);
-
-	spi_fd = open("/dev/spidev0.0", O_RDWR);
+	if(wiringPiSetup() == -1)
+	{
+		puts("Erro em wiringPiSetup().");
+		return -1;
+	}
+	spi_fd = wiringPiSPISetup (0, 500000);
 	if(spi_fd==-1)
 	{
 		puts("Erro abrindo a SPI. Garanta que ela nao");
 		puts("esteja sendo usada por outra aplicacao.");
 		return -1;
 	}
-	SPI_Config();
   while(1)
   {
      soma=0;
@@ -47,10 +49,11 @@ int main(void)
              d=0x02;
              SPI_RW(&d, d);
              soma += (d << 8); //"<<": realizar o deslocamento
-             usleep(10000)//10ms = 10000us
+             usleep(10000);//10ms = 10000us
         }
    soma=(soma+50/100); //somando metade do que estou dividindo: arredondar para cima. Ex.> se a variavel soma valesse 80, dividindo por 100, o valor da respoasta em inteiro seria 0
    printf("Media=%d\n", soma);
-  }
+      }
 	close(spi_fd);
-}    
+    }    
+}
