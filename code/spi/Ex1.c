@@ -40,7 +40,7 @@ int main(void)
      soma=0;
      for (i=0;i<100;i++);
      {
-        send_msp430=0x55;
+        user_input=0x55;
         wiringPiSPIDataRW(0, &send_msp430, 1);
 	     printf("valor1=%d\n", send_msp430);
         if (user_input == 0xAA);
