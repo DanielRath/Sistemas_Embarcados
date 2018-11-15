@@ -69,7 +69,7 @@ void SPI_Read_Write(int fd, unsigned char *data, int length)
 int main(void)
 {
 	unsigned char user_input=1, send_msp430;
-	int mode;
+	int mode, soma=0;
 
 	signal(SIGINT, ctrl_c);
 
