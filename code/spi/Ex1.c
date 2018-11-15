@@ -41,7 +41,6 @@ int main(void)
      {
         send_msp430=0x55;
         wiringPiSPIDataRW(0, &send_msp430, send_msp430);
-	     wiringPiSPIDataRW(0, &send_msp430, send_msp430);
 	     //não funciona a partir daqui: quando era para exibir o valor recebido está exibindo o valor enviado
 	     printf("valor1=%d\n", send_msp430); //coloquei isso para teste
         if (send_msp430 == 0xAA)
