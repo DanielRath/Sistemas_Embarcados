@@ -45,8 +45,8 @@ int main(void)
         if (send_msp430 == 0xAA);
         {
              usleep(100);
-             send_msp430=0x03;
-             wiringPiSPIDataRW(0, &send_msp430, 1);
+             send_msp430=0x01;
+             wiringPiSPIDataRW(1, &send_msp430, 1);
              soma += send_msp430;
              send_msp430=0x02;
              wiringPiSPIDataRW(0, &send_msp430, send_msp430);
