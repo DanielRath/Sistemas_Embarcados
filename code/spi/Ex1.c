@@ -42,15 +42,17 @@ int main(void)
      {
         send_msp430=0x55;
         wiringPiSPIDataRW(0, &send_msp430, 1);
+	     printf("valor1=%d\n", send_msp430);
         if (send_msp430 == 0xAA);
         {
              usleep(100);
              send_msp430=0x01;
              wiringPiSPIDataRW(1, &send_msp430, 1);
+		printf("valor2=%d\n", send_msp430);
              soma += send_msp430;
              send_msp430=0x02;
              wiringPiSPIDataRW(0, &send_msp430, send_msp430);
-		printf("valor=%d\n", soma);
+		printf("valor3=%d\n", send_msp430);
              soma += (send_msp430 << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
