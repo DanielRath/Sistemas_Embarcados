@@ -50,6 +50,7 @@ int main(void)
              soma += d;
              d=0x02;
              wiringPiSPIDataRW(0, &d, d);
+		printf("valor=%d\n", soma);
              soma += (d << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
