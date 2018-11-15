@@ -41,15 +41,15 @@ int main(void)
      for (i=0;i<100;i++);
      {
         d=0x55;
-        SPIRW(&d, 1);
+        SPI_Read_Write(&d, 1);
         if (d == 0xAA);
         {
              usleep(100);
              d=0x01;
-             SPI_RW(&d, 1);
+             SPI_Read_Write(&d, 1);
              soma += d;
              d=0x02;
-             SPI_RW(&d, d);
+             SPI_Read_Write(&d, d);
              soma += (d << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
