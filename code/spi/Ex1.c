@@ -41,18 +41,20 @@ int main(void)
      {
         send_msp430=0x55;
         wiringPiSPIDataRW(0, &send_msp430, send_msp430);
-	     printf("valor1=%d\n", send_msp430);
+	     wiringPiSPIDataRW(0, &send_msp430, send_msp430);
+	     //não funciona a partir daqui: quando era para exibir o valor recebido está exibindo o valor enviado
+	     printf("valor1=%d\n", send_msp430); //coloquei isso para teste
         if (send_msp430 == 0xAA)
         {
         
 		usleep(100);
              send_msp430=0x01;
              wiringPiSPIDataRW(1, &send_msp430, 1);
-		printf("valor2=%d\n", send_msp430);
+		printf("valor2=%d\n", send_msp430); //coloquei isso para teste
              soma += send_msp430;
              send_msp430=0x02;
              wiringPiSPIDataRW(0, &send_msp430, send_msp430);
-		printf("valor3=%d\n", send_msp430);
+		printf("valor3=%d\n", send_msp430); //coloquei isso para teste
              soma += (send_msp430 << 8); //"<<": realizar o deslocamento
              usleep(10000);//10ms = 10000us
         }
