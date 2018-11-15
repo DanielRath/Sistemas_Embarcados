@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 // Este codigo requer a biblioteca wringPi. Compile-o usando
-//    gcc Ex2.c -lwiringPi -o Ex2.out
+//    gcc Ex1.c -lwiringPi -o Ex1
 
 int spi_fd;
 void ctrl_c(int sig)
