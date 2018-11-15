@@ -19,7 +19,9 @@ void ctrl_c(int sig)
 int main(void)
 {
 	unsigned char user_input=1, send_msp430;
-
+	int i=0, int soma=0;
+	char d[];
+	
 	signal(SIGINT, ctrl_c);
 	if(wiringPiSetup() == -1)
 	{
