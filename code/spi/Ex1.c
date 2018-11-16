@@ -40,6 +40,8 @@ int main(void)
      for (i=0;i<100;i++);
      {
         d=0x55;
+	     
+	     
 	     //não funciona a partir daqui: quando era para exibir o valor recebido está exibindo o valor enviado
 	     send_msp430 = d; //alteração ainda não testada
 	     //ver se funciona, ir alterando abaixo caso sim
@@ -48,6 +50,11 @@ int main(void)
 	     //wiringPiSPIDataRW (int channel, unsigned char *data, int len) ; 
 	     //channel: a rasp tem 2 canais spi (spi0 e spi1)
 	     //len - length of characters in string
+	     
+	     
+	     //duvida: a função manda um unsigned char, mas o msp está configurado para ler um inteiro 
+	     //(se fosse um char o numero estaria entre aspas); seria isso a causa de problemas?
+	     
 	     printf("valor1=%d\n", send_msp430); //coloquei isso para teste
         if (send_msp430 == 0xAA)
         {
