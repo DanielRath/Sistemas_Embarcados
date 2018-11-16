@@ -19,7 +19,7 @@ void ctrl_c(int sig)
 int main(void)
 {
 	unsigned char send_msp430;
-	int i=0, soma=0;
+	int i=0, soma=0, int d=0;
 	
 	signal(SIGINT, ctrl_c);
 	if(wiringPiSetup() == -1)
@@ -39,16 +39,22 @@ int main(void)
      soma=0;
      for (i=0;i<100;i++);
      {
-        send_msp430=0x55;
-        wiringPiSPIDataRW(0, &send_msp430, send_msp430);
+        d=0x55;
 	     //não funciona a partir daqui: quando era para exibir o valor recebido está exibindo o valor enviado
+	     send_msp430 = d; //alteração ainda não testada
+	     //ver se funciona, ir alterando abaixo caso sim
+        wiringPiSPIDataRW(0, &send_msp430, 1);
+	     //para consertar: ateção ao len
+	     //wiringPiSPIDataRW (int channel, unsigned char *data, int len) ; 
+	     //channel: a rasp tem 2 canais spi (spi0 e spi1)
+	     //len - length of characters in string
 	     printf("valor1=%d\n", send_msp430); //coloquei isso para teste
         if (send_msp430 == 0xAA)
         {
         
 		usleep(100);
              send_msp430=0x01;
-             wiringPiSPIDataRW(1, &send_msp430, 1);
+             wiringPiSPIDataRW(0, &send_msp430, 1);
 		printf("valor2=%d\n", send_msp430); //coloquei isso para teste
              soma += send_msp430;
              send_msp430=0x02;
