@@ -5,7 +5,7 @@ int opcao;
 
 //comandos importantes:
 //ps -A
-void opcao_invalida
+void opcao_invalida()
 {
 	        printf("\n-----------------------------------------------------------------------\n");  
                 printf("\nEsta opção é inválida. Escolha uma opção válida.\n\n\n\n");
