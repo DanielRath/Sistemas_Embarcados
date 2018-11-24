@@ -45,7 +45,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=";
+					string="gphoto2 --set-config /main/capturesettings/shutterspeed=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
@@ -54,7 +54,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/imagesettings/iso");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					string[]="gphoto2 --set-config /main/imagesettings/iso=";
+					string="gphoto2 --set-config /main/imagesettings/iso=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
@@ -63,7 +63,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/aperture");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					string[]="gphoto2 --set-config /main/capturesettings/aperture=";
+					string="gphoto2 --set-config /main/capturesettings/aperture=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
