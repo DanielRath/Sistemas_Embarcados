@@ -4,7 +4,7 @@
 
 int opcao;
 char string[];
-opcao_char[4];
+char opcao_char[4];
 
 //comandos importantes:
 //ps -A
