@@ -30,7 +30,7 @@ void ajustes()
 		printf("1- Velocidade do Obturador\n");
 		printf("2- ISO\n");
 		printf("3- Abertura do Diafragma\n");
-		printf("4- Sair\n");
+		printf("4- Voltar ao Menu Principal\n");
 		printf("\n");
 		escolha_opcao();
 		if (opcao<=4)
