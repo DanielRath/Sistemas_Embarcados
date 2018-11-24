@@ -88,7 +88,8 @@ void menu()
         switch(opcao)
 {
                 case 1:
-                        system ("gphoto2 --trigger-capture");
+                        //system ("gphoto2 --trigger-capture");
+			system ("gphoto2 --capture-image-and-download");
                         printf("\nTirando foto\n");
 			system ("clear");
 			printf("Foto tirada\n");
