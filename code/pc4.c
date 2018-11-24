@@ -48,12 +48,12 @@ void ajustes()
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
-				break; /*
+				break; 
 				case 2: 
 					system ("gphoto2 --get-config /main/imagesettings/iso");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					string="gphoto2 --set-config /main/imagesettings/iso=";
+					strcpy(string,"gphoto2 --set-config /main/imagesettings/iso=");
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
@@ -62,11 +62,11 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/aperture");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					string="gphoto2 --set-config /main/capturesettings/aperture=";
+					strcpy(string,"gphoto2 --set-config /main/capturesettings/aperture=");
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
-				break; */
+				break; 
 				case 4: 
 					printf("\n");
 					printf("Voltando ao Menu Principal\n");
