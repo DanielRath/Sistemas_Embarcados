@@ -41,24 +41,19 @@ void ajustes()
 				case 1:
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 					printf("\nEscolha a opção desejada\n"); 
+					escolha_opcao();
 				break;
 				case 2: 
-					printf("\n");
-					system("cd ~/gphoto && gphoto2 --get-all-files --skip-existing");
-					printf("\nImportando Imagens\n");
-					system ("clear");
-					printf("\nImagens Importadas\n");
+					//inserir
 				break;
 				case 3: 
-					system ("clear");
-					ajustes();
+					//inserir
 				break;
 				case 4: 
 					printf("\n");
-					printf("Saindo...\n");
+					printf("Voltando ao Menu Principal\n");
 					teste_ajustes=0;
 					system("clear");
-					printf("O programa foi encerrado\n");
 					}
 		}
 		else
