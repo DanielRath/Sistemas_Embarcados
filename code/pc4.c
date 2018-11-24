@@ -11,6 +11,15 @@ void opcao_invalida()
                 printf("\nEsta opção é inválida. Escolha uma opção válida.\n\n\n\n");
 }
 
+int escolha_opcao()
+{
+	scanf("%d", &opcao);
+	printf("\n");
+	printf("-----------------------------------------------------------------------\n"); 
+	printf ("\nVocê escolheu a opção: %d\n", opcao);
+	return opcao;
+}
+
 void ajustes()
 {
 	int teste_ajustes=1;
@@ -21,16 +30,14 @@ void ajustes()
 		printf("3- Abertura do Diafragma\n");
 		printf("4- Sair\n");
 		printf("\n");
-		scanf("%d", &opcao);
-		printf("\n");
-		printf("-----------------------------------------------------------------------\n"); 
-		printf ("\nVocê escolheu a opção: %d\n", opcao);
+		escolha_opcao();
 		if (opcao<=4)
 		{        
 			switch(opcao)
 			{
 				case 1:
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
+					printf("\nEscolha a opção desejada\n"); 
 				break;
 				case 2: 
 					printf("\n");
@@ -71,11 +78,7 @@ void menu()
         printf("2- Importar fotos\n");
 	printf("3- Ajustes de Captura\n");
         printf("4- Sair\n");
-        printf("\n");
-        scanf("%d", &opcao);
-        printf("\n");
-        printf("-----------------------------------------------------------------------\n"); 
-        printf ("\nVocê escolheu a opção: %d\n", opcao);
+        escolha_opcao();
         if (opcao<=4){        
         switch(opcao)
 {
