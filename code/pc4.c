@@ -25,6 +25,8 @@ void ajustes()
 	int teste_ajustes=1;
 	while(teste_ajustes)
 	{
+		printf("-----------------------------------------------------------------------\n");        
+        	printf("\nEscolha a opção desejada\n"); 
 		printf("1- Velocidade do Obturador\n");
 		printf("2- ISO\n");
 		printf("3- Abertura do Diafragma\n");
