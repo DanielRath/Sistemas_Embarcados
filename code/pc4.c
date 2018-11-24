@@ -49,7 +49,7 @@ void ajustes()
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
-				break;
+				break; /*
 				case 2: 
 					system ("gphoto2 --get-config /main/imagesettings/iso");
 					printf("\nEscolha a opção desejada\n"); 
@@ -67,7 +67,7 @@ void ajustes()
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
-				break;
+				break; */
 				case 4: 
 					printf("\n");
 					printf("Voltando ao Menu Principal\n");
