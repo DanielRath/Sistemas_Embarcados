@@ -28,6 +28,7 @@ void ajustes()
 	while(teste_ajustes)
 	{
 		printf("\nAjustes de Captura\n");
+		printf("\nPor favor, coloque a camera em um dos modos manuais\n");
 		printf("-----------------------------------------------------------------------\n");        
         	printf("\nEscolha a opção desejada\n"); 
 		printf("1- Velocidade do Obturador\n");
