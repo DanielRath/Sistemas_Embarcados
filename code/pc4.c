@@ -3,18 +3,8 @@
 
 int opcao;
 
-//Msg pra a Pri:
-//Ao abrir o terminal da rasp, dá o comando "mkdir gphoto",
-// por favor?
-//é para criarmos o diretório onde as imagens serão importadas
-
-
-//to do list:
-
-
 //comandos importantes:
 //ps -A
-
 
 void menu()
 {
