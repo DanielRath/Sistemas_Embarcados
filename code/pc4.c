@@ -30,7 +30,6 @@ void ajustes()
 			switch(opcao)
 			{
 				case 1:
-					gphoto2 --get-config /main/capturesettings/shutterspeed
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 				break;
 				case 2: 
