@@ -3,6 +3,8 @@
 #include <string.h>
 
 int opcao;
+char string[];
+opcao_char[4];
 
 //comandos importantes:
 //ps -A
@@ -43,8 +45,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					char string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=";
-					char opcao_char[4];
+					string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
@@ -53,8 +54,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/imagesettings/iso");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					char string[]="gphoto2 --set-config /main/imagesettings/iso=";
-					char opcao_char[4];
+					string[]="gphoto2 --set-config /main/imagesettings/iso=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
@@ -63,8 +63,7 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/aperture");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					char string[]="gphoto2 --set-config /main/capturesettings/aperture=";
-					char opcao_char[4];
+					string[]="gphoto2 --set-config /main/capturesettings/aperture=";
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
