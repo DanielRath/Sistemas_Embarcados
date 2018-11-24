@@ -30,9 +30,29 @@ void ajustes()
 			switch(opcao)
 			{
 				case 1:
-					//colocar configuração atual
+					system ("gphoto2 --trigger-capture");
+					printf("\nTirando foto\n");
+					system ("clear");
+					printf("Foto tirada\n");
 				break;
-			}
+				case 2: 
+					printf("\n");
+					system("cd ~/gphoto && gphoto2 --get-all-files --skip-existing");
+					printf("\nImportando Imagens\n");
+					system ("clear");
+					printf("\nImagens Importadas\n");
+				break;
+				case 3: 
+					system ("clear");
+					ajustes();
+				break;
+				case 4: 
+					printf("\n");
+					printf("Saindo...\n");
+					teste=0;
+					system("clear");
+					printf("O programa foi encerrado\n");
+					}
 		}
 		else
 		{
