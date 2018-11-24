@@ -50,10 +50,10 @@ void ajustes()
 					system (string);
 				break; 
 				case 2: 
-					system ("gphoto2 --get-config /main/imagesettings/iso");
+					system ("gphoto2 --get-config /main/imgsettings/iso");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					strcpy(string,"gphoto2 --set-config /main/imagesettings/iso=");
+					strcpy(string,"gphoto2 --set-config /main/imgsettings/iso=");
 					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
