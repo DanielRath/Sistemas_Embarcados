@@ -46,7 +46,7 @@ void ajustes()
 				case 4: 
 					printf("\n");
 					printf("Saindo...\n");
-					teste=0;
+					teste_ajustes=0;
 					system("clear");
 					printf("O programa foi encerrado\n");
 					}
