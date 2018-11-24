@@ -5,6 +5,25 @@ int opcao;
 
 //comandos importantes:
 //ps -A
+void opcao_invalida
+{
+	        printf("\n-----------------------------------------------------------------------\n");  
+                printf("\nEsta opção é inválida. Escolha uma opção válida.\n\n\n\n");
+}
+
+void ajustes()
+{
+	switch(opcao)
+	{
+                case 1:
+                        system ("gphoto2 --trigger-capture");
+                        printf("\nTirando foto\n");
+			system ("clear");
+			printf("Foto tirada\n");
+                break;
+        }
+	
+}
 
 void menu()
 {
@@ -16,13 +35,14 @@ void menu()
         printf("\nEscolha a opção desejada\n"); 
         printf("1- Tirar foto\n");
         printf("2- Importar fotos\n");
-        printf("3- Sair\n");
+	printf("3- Ajustes de Captura\n");
+        printf("4- Sair\n");
         printf("\n");
         scanf("%d", &opcao);
         printf("\n");
         printf("-----------------------------------------------------------------------\n"); 
         printf ("\nVocê escolheu a opção: %d\n", opcao);
-        if (opcao<=3){        
+        if (opcao<=4){        
         switch(opcao)
 {
                 case 1:
@@ -38,7 +58,11 @@ void menu()
 			system ("clear");
 			printf("\nImagens Importadas\n");
                 break;
-                case 3: 
+		case 3: 
+                        printf("\n");
+                        ajustes();
+                break;
+                case 4: 
                         printf("\n");
                         printf("Saindo...\n");
                         teste=0;
@@ -46,8 +70,7 @@ void menu()
 			printf("O programa foi encerrado\n");
         }}
         else{
-        printf("\n-----------------------------------------------------------------------\n");  
-                printf("\nEsta opção é inválida. Escolha uma opção válida.\nOpções válidas:\n1- Tirar foto\n2- Calendário\n\n\n\n");
+		opcao_invalida();
         }
     }
 }
