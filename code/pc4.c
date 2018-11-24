@@ -3,7 +3,7 @@
 #include <string.h>
 
 int opcao;
-char opcao_char;
+char opcao_char[];
 
 //comandos importantes:
 //ps -A
