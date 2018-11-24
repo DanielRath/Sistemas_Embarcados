@@ -13,15 +13,30 @@ void opcao_invalida()
 
 void ajustes()
 {
-	switch(opcao)
+	int teste_ajustes=1;
+	while(teste)
 	{
-                case 1:
-                        system ("gphoto2 --trigger-capture");
-                        printf("\nTirando foto\n");
-			system ("clear");
-			printf("Foto tirada\n");
-                break;
-        }
+		printf("1- Velocidade do Obturador\n");
+		printf("2- ISO\n");
+		printf("3- Abertura do Diafragma\n");
+		printf("4- Sair\n");
+		printf("\n");
+		scanf("%d", &opcao);
+		printf("\n");
+		printf("-----------------------------------------------------------------------\n"); 
+		printf ("\nVocê escolheu a opção: %d\n", opcao);
+		if (opcao<=4){        
+			switch(opcao)
+			{
+				case 1:
+					//colocar configuração atual
+				break;
+			}
+		else
+		{
+			opcao_invalida();
+        	}
+	}
 	
 }
 
@@ -59,7 +74,7 @@ void menu()
 			printf("\nImagens Importadas\n");
                 break;
 		case 3: 
-                        printf("\n");
+                        system ("clear");
                         ajustes();
                 break;
                 case 4: 
