@@ -44,7 +44,8 @@ void ajustes()
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
 					char string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=50";
-					char opcao_char[] = (char) opcao;
+					char opcao_char[];
+					sprintf(opcao_char, "%d", opcao);
 					strcat(string, opcao_char);
 					system (string);
 					//system("gphoto2 --set-config /main/capturesettings/shutterspeed=52");
