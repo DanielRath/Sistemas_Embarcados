@@ -14,7 +14,7 @@ void opcao_invalida()
 void ajustes()
 {
 	int teste_ajustes=1;
-	while(teste)
+	while(teste_ajustes)
 	{
 		printf("1- Velocidade do Obturador\n");
 		printf("2- ISO\n");
@@ -25,13 +25,15 @@ void ajustes()
 		printf("\n");
 		printf("-----------------------------------------------------------------------\n"); 
 		printf ("\nVocê escolheu a opção: %d\n", opcao);
-		if (opcao<=4){        
+		if (opcao<=4)
+		{        
 			switch(opcao)
 			{
 				case 1:
 					//colocar configuração atual
 				break;
 			}
+		}
 		else
 		{
 			opcao_invalida();
