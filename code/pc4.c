@@ -42,8 +42,9 @@ void ajustes()
 					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 					printf("\nEscolha a opção desejada\n"); 
 					escolha_opcao();
-					char string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=9";
-					system (string);
+					//char string[]="gphoto2 --set-config /main/capturesettings/shutterspeed=9";
+					//system (string);
+					system("gphoto2 --set-config /main/capturesettings/shutterspeed=9");
 				break;
 				case 2: 
 					//inserir
