@@ -31,10 +31,7 @@ void ajustes()
 			{
 				case 1:
 					gphoto2 --get-config /main/capturesettings/shutterspeed
-					system ("gphoto2 --trigger-capture");
-					printf("\nTirando foto\n");
-					system ("clear");
-					printf("Foto tirada\n");
+					system ("gphoto2 --get-config /main/capturesettings/shutterspeed");
 				break;
 				case 2: 
 					printf("\n");
