@@ -91,32 +91,33 @@ void menu()
         printf("\nBem-vindo ao dispositivo Smart\n");
         printf("-----------------------------------------------------------------------\n");        
         printf("\nEscolha a opção desejada\n"); 
-        printf("1- Tirar foto\n");
-        printf("2- Importar fotos\n");
-	printf("3- Ajustes de Captura\n");
-        printf("4- Sair\n");
+        printf("1- Tirar e importar foto\n");
+        //printf("2- Importar fotos\n");
+	printf("2- Ajustes de Captura\n");
+        printf("3- Sair\n");
         escolha_opcao();
         if (opcao<=4){        
         switch(opcao)
 {
                 case 1:
                         system ("gphoto2 --trigger-capture");
+			system("cd ~/CanonT5i && gphoto2 --get-all-files --skip-existing");
                         printf("\nTirando foto\n");
 			system ("clear");
 			printf("Foto tirada\n");
                 break;
-                case 2: 
+                /*case 2: 
                         printf("\n");
                         system("cd ~/CanonT5i && gphoto2 --get-all-files --skip-existing");
-			printf("\nImportando Imagens\n");
+			printf("\nImportando Imagens\n"); //impoartar para pasta e importar para o drop
 			system ("clear");
 			printf("\nImagens Importadas\n");
-                break;
-		case 3: 
+                break;*/
+		case 2: 
                         system ("clear");
                         ajustes();
                 break;
-                case 4: 
+                case 3: 
                         printf("\n");
                         printf("Saindo...\n");
                         teste=0;
