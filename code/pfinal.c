@@ -101,6 +101,7 @@ void menu()
 {
                 case 1:
                         system ("gphoto2 --trigger-capture");
+			sleep(1);
 			system("cd ~/CanonT5i && gphoto2 --get-all-files --skip-existing");
                         printf("\nTirando foto\n");
 			//system ("clear");
