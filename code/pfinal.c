@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include<unistd.h> //sleep
 //teste
 int opcao;
 char opcao_char[4], string[70];
